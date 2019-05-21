@@ -1,0 +1,7 @@
+C:\Users\Eli\Documents\UNI2019\CAB201\Assignment\Assignment\bin\Debug\Assignment.exe.config
+C:\Users\Eli\Documents\UNI2019\CAB201\Assignment\Assignment\bin\Debug\Assignment.exe
+C:\Users\Eli\Documents\UNI2019\CAB201\Assignment\Assignment\bin\Debug\Assignment.pdb
+C:\Users\Eli\Documents\UNI2019\CAB201\Assignment\Assignment\obj\Debug\Assignment.csprojAssemblyReference.cache
+C:\Users\Eli\Documents\UNI2019\CAB201\Assignment\Assignment\obj\Debug\Assignment.csproj.CoreCompileInputs.cache
+C:\Users\Eli\Documents\UNI2019\CAB201\Assignment\Assignment\obj\Debug\Assignment.exe
+C:\Users\Eli\Documents\UNI2019\CAB201\Assignment\Assignment\obj\Debug\Assignment.pdb
