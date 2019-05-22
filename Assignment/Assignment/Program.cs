@@ -34,6 +34,7 @@ namespace Assignment
             // Stop timing.
             //stopwatch1.Stop();
 
+
             // Write result.
             Console.WriteLine("Time elapsed: {0}", stopwatch.Elapsed);
 
@@ -44,6 +45,48 @@ namespace Assignment
             plane.readplanespecs(args[2]);
 
             tour.printtour();
+
+            if (args.Contains("-o") == true)
+            {
+                string outputFile = args[5]; //write file
+                FileStream outFile = new FileStream(outputFile, FileMode.Create, FileAccess.Write);
+                StreamWriter writer = new StreamWriter(outFile);
+
+                Console.WriteLine("Saving itinerary to {0}", args[5]);
+                writer.Write(tour.itinerary);
+
+                writer.Close();
+                outFile.Close();
+            }
+
+            List<string> station_name = new List<string>();
+            List<string> station_x = new List<string>();
+            List<string> station_y = new List<string>();
+            List<double> distanceresult = new List<double>();
+            string[] stationDetails;
+
+            string fileLocation = "";
+
+            //Easy way to read
+            string[] filelines = File.ReadAllLines(fileLocation);
+
+            //Other approach: file stream
+            FileStream inFile = new FileStream(fileLocation, FileMode.Open, FileAccess.Read);
+            StreamReader reader = new StreamReader(inFile);
+
+            string line;
+
+            while ((line = reader.ReadLine()) != null)
+            {
+                stationDetails = line.Split(' ');
+
+                station_name.Add(stationDetails[0]);
+
+                station_x.Add(stationDetails[1]);
+
+                station_y.Add(stationDetails[2]);
+
+            }
 
             //if -o exists in the argument array
             //    print itinery.txt

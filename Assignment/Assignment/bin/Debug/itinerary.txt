@@ -1,6 +1,1 @@
-po	->	wsx	23:00	23:56	281.43 metres	56.29 mins
-po	->	wsx	23:00	23:56	281.43 metres	56.29 minswsx	->	edc	23:56	00:24	141.42 metres	28.28 mins
-po	->	wsx	23:00	23:56	281.43 metres	56.29 minswsx	->	edc	23:56	00:24	141.42 metres	28.28 minsedc	->	rfv	00:24	01:04	200 metres	40 mins
-po	->	wsx	23:00	23:56	281.43 metres	56.29 minswsx	->	edc	23:56	00:24	141.42 metres	28.28 minsedc	->	rfv	00:24	01:04	200 metres	40 minsrfv	->	tgb	01:04	01:32	141.42 metres	28.28 mins***refuel 10 minutes ***
-po	->	wsx	23:00	23:56	281.43 metres	56.29 minswsx	->	edc	23:56	00:24	141.42 metres	28.28 minsedc	->	rfv	00:24	01:04	200 metres	40 minsrfv	->	tgb	01:04	01:32	141.42 metres	28.28 mins***refuel 10 minutes ***tgb	->	yhn	01:32	01:54	111.8 metres	22.36 mins
-po	->	wsx	23:00	23:56	281.43 metres	56.29 minswsx	->	edc	23:56	00:24	141.42 metres	28.28 minsedc	->	rfv	00:24	01:04	200 metres	40 minsrfv	->	tgb	01:04	01:32	141.42 metres	28.28 mins***refuel 10 minutes ***tgb	->	yhn	01:32	01:54	111.8 metres	22.36 minsyhn	->	po	01:54	02:16	110.46 metres	22.09 mins
+Tour Length: 986.54 kilometrespo	->	wsx	23:00	23:56	281.43 metres	56.29 minswsx	->	edc	23:56	00:24	141.42 metres	28.28 minsedc	->	rfv	00:24	01:04	200 metres	40 minsrfv	->	tgb	01:04	01:32	141.42 metres	28.28 mins***refuel 10 minutes ***tgb	->	yhn	01:32	01:54	111.8 metres	22.36 minsyhn	->	po	01:54	02:16	110.46 metres	22.09 minsTour Time: 4.16 hours

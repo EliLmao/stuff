@@ -7,12 +7,13 @@ using System.Threading.Tasks;
 
 namespace Assignment
 {
-    public static class station
+    public class station
     {
         public static List<string> station_name = new List<string>();
         public static List<string> station_x = new List<string>();
         public static List<string> station_y = new List<string>();
         public static string[] stationDetails;
+
         public static void readstation(string fileLocation)
         {
 
@@ -42,11 +43,6 @@ namespace Assignment
             reader.Close();
             inFile.Close();
         }
-
-        //static void storestation()
-        //{
-        //    station = new station
-        //}
 
     }
 }

@@ -9,10 +9,10 @@ namespace Assignment
 {
     public static class tour
     {
-
+        public static string itinerary = "";
         public static void printtour()
         {
-            string itinerary = "";
+            
 
             List<double> distanceresult = new List<double>();
 
@@ -25,10 +25,20 @@ namespace Assignment
 
             for (int i = 0; i < station.station_name.Count - 1; i++) //calculate Eucidilian distance & add to distanceresult list
             {
-                double fresult = Math.Sqrt(Math.Pow(Convert.ToInt32(station.station_x[i]) - Convert.ToInt32(station.station_x[i + 1]), 2) 
-                    + Math.Pow(Convert.ToInt32(station.station_y[i]) - Convert.ToInt32(station.station_y[i + 1]), 2));
+                //double fresult = Math.Sqrt(Math.Pow(Convert.ToInt32(station.station_x[i]) - Convert.ToInt32(station.station_x[i + 1]), 2) 
+                //    + Math.Pow(Convert.ToInt32(station.station_y[i]) - Convert.ToInt32(station.station_y[i + 1]), 2));
 
-                distanceresult.Add(fresult);
+                int x0 = Convert.ToInt32(station.station_x[i]);
+                int y0 = Convert.ToInt32(station.station_y[i]);
+
+                int x1 = Convert.ToInt32(station.station_x[i + 1]);
+                int y1 = Convert.ToInt32(station.station_y[i + 1]);
+
+                int dX = x1 - x0;
+                int dY = y1 - y0;
+                double distance = Math.Sqrt(dX * dX + dY * dY);
+
+                distanceresult.Add(distance);
             }
 
 
@@ -83,19 +93,18 @@ namespace Assignment
 
             }
 
-            string outputFile = arguments[6]; //write file
-            FileStream outFile = new FileStream(outputFile, FileMode.Create, FileAccess.Write);
-            StreamWriter writer = new StreamWriter(outFile);
+            
 
             //itinerary += String.Format("Tour Length: {0} kilometres\n", Math.Round(tour_length, 2));
 
             Console.WriteLine("Tour Length: {0} kilometres", Math.Round(tour_length, 2));
 
+            itinerary += String.Format("Tour Length: {0} kilometres", Math.Round(tour_length, 2));
             
             for (int i = 0; i < station.station_name.Count - 1; i++) //prints the station details (name, x, y etc.)
             {
 
-                itinerary = itinerary + String.Format("{0}\t->\t{1}\t{2}\t{3}\t{4} metres\t{5} mins", station.station_name[i], station.station_name[i + 1], 
+                itinerary += String.Format("{0}\t->\t{1}\t{2}\t{3}\t{4} metres\t{5} mins", station.station_name[i], station.station_name[i + 1], 
                     departtime[i], arrivaltime[i], Math.Round(distanceresult[i], 2), Math.Round(stationdurations[i], 2));
 
                 Console.WriteLine("{0}\t->\t{1}\t{2}\t{3}\t{4} metres\t{5} mins", station.station_name[i], station.station_name[i + 1], 
@@ -108,16 +117,16 @@ namespace Assignment
                     currentrange = plane.range;
 
                     tour_time = tour_time + (plane.refueltime/60);
-
-                    itinerary += String.Format("***refuel {0} minutes ***", plane.refueltime);
+                    
                     Console.WriteLine("***refuel {0} minutes ***", plane.refueltime);
+                    itinerary += String.Format("***refuel {0} minutes ***", plane.refueltime);
                 }
 
                 //for (int z = 0; z < 20; z++)
                 //{
                     // writing to file
                     
-                    writer.WriteLine(itinerary);
+                    
                     //writer.WriteLine(hi);
                     //closes everything
 
@@ -127,12 +136,27 @@ namespace Assignment
             }
 
 
+            Console.WriteLine("Tour Time: {0} hours",Math.Round(tour_time, 2));
+
+            //TimeSpan t = TimeSpan.FromHours(6.23);
+
+            //string answer = string.Format("{0:D2}h:{1:D2}m:{2:D2}s:{3:D3}ms",
+            //    t.Hours,
+            //    t.Minutes,
+            //    t.Seconds,
+            //    t.Milliseconds);
+
+            //Console.WriteLine(answer);
+
+            //String.Format("{0} days, {1} hours, {2} minutes, {3} seconds",
+            //    span.Days, span.Hours, span.Minutes, span.Seconds);
+
+            itinerary += String.Format("Tour Time: {0} hours", Math.Round(tour_time, 2));
+
+
             
 
-                writer.Close();
-            outFile.Close();
-
-            Console.WriteLine("Tour Time: {0} hours",Math.Round(tour_time, 2));
+            
 
             //Console.WriteLine("{0}\t->\t{1}\t{2}", station.station_name[station.station_x.Count - 1], station.station_name[0], homefresult);
             //double homefresult = Math.Sqrt(Math.Pow(Convert.ToInt32(station.station_x[station.station_x.Count - 1]) - Convert.ToInt32(station.station_x[0]), 2)
