@@ -7,11 +7,11 @@ using System.Threading.Tasks;
 
 namespace Assignment
 {
-    class stations
+    public class stations
     {
         private int x_cord;
         private int y_cord;
-        private string name { get; }
+        private string name;
 
         //String[] argumentss = Environment.GetCommandLineArgs();
 
@@ -25,69 +25,39 @@ namespace Assignment
         //public int X_coord { set; get; }
         //public int Y_coord { set; get; }
 
-        public static List<string> station_name = new List<string>();
-        public static List<string> station_x = new List<string>();
-        public static List<string> station_y = new List<string>();
-        List<double> distanceresult = new List<double>();
-        public static string[] stationDetails;
-
-        public static void readstation(string fileLocation)
+        public int X_coord
         {
-            //Easy way to read
-            string[] filelines = File.ReadAllLines(fileLocation);
-
-            //Other approach: file stream
-            FileStream inFile = new FileStream(fileLocation, FileMode.Open, FileAccess.Read);
-            StreamReader reader = new StreamReader(inFile);
-
-            string line;
-
-
-
-            while ((line = reader.ReadLine()) != null)
-            {
-                stationDetails = line.Split(' ');
-
-                station_name.Add(stationDetails[0]);
-
-                station_x.Add(stationDetails[1]);
-
-                station_y.Add(stationDetails[2]);
-
-            }
-
-            reader.Close();
-            inFile.Close();
+            get
+            { return x_cord;  }
+            set
+            { x_cord = value;  }
         }
 
-        public stations(string recievedName, int y, int x)
+        public void Sta(string receivedName, int y, int x)
         {
-            name = recievedName;
+            name = receivedName;
             x_cord = x;
             y_cord = y;
         }
 
-        public void calcdistance()
-        {
-            for (int i = 0; i < distanceresult.Count; i++)
-            {
-                int x0 = Convert.ToInt32(stations.station_x[i]);
-                int y0 = Convert.ToInt32(stations.station_y[i]);
+        
 
-                int x1 = Convert.ToInt32(stations.station_x[i + 1]);
-                int y1 = Convert.ToInt32(stations.station_y[i + 1]);
+        //public void calcdistance()
+        //{
+        //    for (int i = 0; i < distanceresult.Count; i++)
+        //    {
+        //        int x0 = Convert.ToInt32(stations.station_x[i]);
+        //        int y0 = Convert.ToInt32(stations.station_y[i]);
 
-                int dX = x1 - x0;
-                int dY = y1 - y0;
-                double distance = Math.Sqrt(dX * dX + dY * dY);
-            }
+        //        int x1 = Convert.ToInt32(stations.station_x[i + 1]);
+        //        int y1 = Convert.ToInt32(stations.station_y[i + 1]);
 
-        }
+        //        int dX = x1 - x0;
+        //        int dY = y1 - y0;
+        //        double distance = Math.Sqrt(dX * dX + dY * dY);
+        //    }
+
+        //}
 
     }
 }
-
-
-(wsx, edc, rfv)
-(20, 300, 300)
-(200, 300, 100)

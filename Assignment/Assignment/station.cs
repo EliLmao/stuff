@@ -7,8 +7,13 @@ using System.Threading.Tasks;
 
 namespace Assignment
 {
-    public class station
+    public class Station
     {
+
+        //public int x;
+        //public int y;
+        //public string stationname;
+
         public static List<string> station_name = new List<string>();
         public static List<string> station_x = new List<string>();
         public static List<string> station_y = new List<string>();

@@ -39,7 +39,7 @@ namespace Assignment
             Console.WriteLine("Time elapsed: {0}", stopwatch.Elapsed);
 
             Console.WriteLine("Reading input from {0}", args[1]);
-            station.readstation(args[1]);
+            Station.readstation(args[1]);
 
             Console.WriteLine("Reading input from {0}", args[2]);
             plane.readplanespecs(args[2]);
@@ -59,34 +59,36 @@ namespace Assignment
                 outFile.Close();
             }
 
-            List<string> station_name = new List<string>();
-            List<string> station_x = new List<string>();
-            List<string> station_y = new List<string>();
-            List<double> distanceresult = new List<double>();
-            string[] stationDetails;
+            stations.Sta(Station.station_name[0], Convert.ToInt32(Station.station_x[0]), Convert.ToInt32(Station.station_y[0]));
 
-            string fileLocation = "";
+            //List<string> station_name = new List<string>();
+            //List<string> station_x = new List<string>();
+            //List<string> station_y = new List<string>();
+            //List<double> distanceresult = new List<double>();
+            //string[] stationDetails;
 
-            //Easy way to read
-            string[] filelines = File.ReadAllLines(fileLocation);
+            //string fileLocation = "";
 
-            //Other approach: file stream
-            FileStream inFile = new FileStream(fileLocation, FileMode.Open, FileAccess.Read);
-            StreamReader reader = new StreamReader(inFile);
+            ////Easy way to read
+            //string[] filelines = File.ReadAllLines(fileLocation);
 
-            string line;
+            ////Other approach: file stream
+            //FileStream inFile = new FileStream(fileLocation, FileMode.Open, FileAccess.Read);
+            //StreamReader reader = new StreamReader(inFile);
 
-            while ((line = reader.ReadLine()) != null)
-            {
-                stationDetails = line.Split(' ');
+            //string line;
 
-                station_name.Add(stationDetails[0]);
+            //while ((line = reader.ReadLine()) != null)
+            //{
+            //    stationDetails = line.Split(' ');
 
-                station_x.Add(stationDetails[1]);
+            //    station_name.Add(stationDetails[0]);
 
-                station_y.Add(stationDetails[2]);
+            //    station_x.Add(stationDetails[1]);
 
-            }
+            //    station_y.Add(stationDetails[2]);
+
+            //}
 
             //if -o exists in the argument array
             //    print itinery.txt

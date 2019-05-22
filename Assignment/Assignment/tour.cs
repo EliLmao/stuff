@@ -19,20 +19,20 @@ namespace Assignment
             String[] arguments = Environment.GetCommandLineArgs(); //gets the command line arguments
 
             //adds post office for the end of the tour
-            station.station_name.Add(station.station_name[0]);
-            station.station_x.Add(station.station_x[0]);
-            station.station_y.Add(station.station_y[0]);
+            Station.station_name.Add(Station.station_name[0]);
+            Station.station_x.Add(Station.station_x[0]);
+            Station.station_y.Add(Station.station_y[0]);
 
-            for (int i = 0; i < station.station_name.Count - 1; i++) //calculate Eucidilian distance & add to distanceresult list
+            for (int i = 0; i < Station.station_name.Count - 1; i++) //calculate Eucidilian distance & add to distanceresult list
             {
                 //double fresult = Math.Sqrt(Math.Pow(Convert.ToInt32(station.station_x[i]) - Convert.ToInt32(station.station_x[i + 1]), 2) 
                 //    + Math.Pow(Convert.ToInt32(station.station_y[i]) - Convert.ToInt32(station.station_y[i + 1]), 2));
 
-                int x0 = Convert.ToInt32(station.station_x[i]);
-                int y0 = Convert.ToInt32(station.station_y[i]);
+                int x0 = Convert.ToInt32(Station.station_x[i]);
+                int y0 = Convert.ToInt32(Station.station_y[i]);
 
-                int x1 = Convert.ToInt32(station.station_x[i + 1]);
-                int y1 = Convert.ToInt32(station.station_y[i + 1]);
+                int x1 = Convert.ToInt32(Station.station_x[i + 1]);
+                int y1 = Convert.ToInt32(Station.station_y[i + 1]);
 
                 int dX = x1 - x0;
                 int dY = y1 - y0;
@@ -44,7 +44,7 @@ namespace Assignment
 
             double tour_length = distanceresult.Sum(); // sum of all distance = tour_length
             
-            double tour_time = (tour_length / plane.speed) + ((plane.landingtime/60) + (plane.landingtime/60)) * station.station_name.Count; //tour time
+            double tour_time = (tour_length / plane.speed) + ((plane.landingtime/60) + (plane.landingtime/60)) * Station.station_name.Count; //tour time
 
             double currentrange = plane.range; // make a double since the range will change
 
@@ -101,13 +101,13 @@ namespace Assignment
 
             itinerary += String.Format("Tour Length: {0} kilometres", Math.Round(tour_length, 2));
             
-            for (int i = 0; i < station.station_name.Count - 1; i++) //prints the station details (name, x, y etc.)
+            for (int i = 0; i < Station.station_name.Count - 1; i++) //prints the station details (name, x, y etc.)
             {
 
-                itinerary += String.Format("{0}\t->\t{1}\t{2}\t{3}\t{4} metres\t{5} mins", station.station_name[i], station.station_name[i + 1], 
+                itinerary += String.Format("{0}\t->\t{1}\t{2}\t{3}\t{4} metres\t{5} mins", Station.station_name[i], Station.station_name[i + 1], 
                     departtime[i], arrivaltime[i], Math.Round(distanceresult[i], 2), Math.Round(stationdurations[i], 2));
 
-                Console.WriteLine("{0}\t->\t{1}\t{2}\t{3}\t{4} metres\t{5} mins", station.station_name[i], station.station_name[i + 1], 
+                Console.WriteLine("{0}\t->\t{1}\t{2}\t{3}\t{4} metres\t{5} mins", Station.station_name[i], Station.station_name[i + 1], 
                     departtime[i], arrivaltime[i] , Math.Round(distanceresult[i], 2), Math.Round(stationdurations[i], 2));
                 
                 currentrange = currentrange - ((distanceresult[i] / plane.speed) * 60); // range - the length of each station
