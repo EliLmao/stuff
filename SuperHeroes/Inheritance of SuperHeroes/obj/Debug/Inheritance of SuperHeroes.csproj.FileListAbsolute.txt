@@ -1,0 +1,25 @@
+\\qut.edu.au\documents\staffhome\staffgroupr$\roggenka\documents\visual studio 2015\Projects\Inheritance of SuperHeroes\Inheritance of SuperHeroes\bin\Debug\Inheritance of SuperHeroes.exe.config
+\\qut.edu.au\documents\staffhome\staffgroupr$\roggenka\documents\visual studio 2015\Projects\Inheritance of SuperHeroes\Inheritance of SuperHeroes\bin\Debug\Inheritance of SuperHeroes.exe
+\\qut.edu.au\documents\staffhome\staffgroupr$\roggenka\documents\visual studio 2015\Projects\Inheritance of SuperHeroes\Inheritance of SuperHeroes\bin\Debug\Inheritance of SuperHeroes.pdb
+\\qut.edu.au\documents\staffhome\staffgroupr$\roggenka\documents\visual studio 2015\Projects\Inheritance of SuperHeroes\Inheritance of SuperHeroes\obj\Debug\Inheritance of SuperHeroes.exe
+\\qut.edu.au\documents\staffhome\staffgroupr$\roggenka\documents\visual studio 2015\Projects\Inheritance of SuperHeroes\Inheritance of SuperHeroes\obj\Debug\Inheritance of SuperHeroes.pdb
+\\qut.edu.au\documents\staffhome\staffgroupr$\roggenka\documents\visual studio 2015\Projects\Inheritance of SuperHeroes\Inheritance of SuperHeroes\obj\Debug\Inheritance of SuperHeroes.csprojResolveAssemblyReference.cache
+\\qut.edu.au\Documents\StaffHome\StaffGroupR$\roggenka\Desktop\CAB201 2016\Projects\SuperHeroes\Inheritance of SuperHeroes\bin\Debug\Inheritance of SuperHeroes.exe.config
+\\qut.edu.au\Documents\StaffHome\StaffGroupR$\roggenka\Desktop\CAB201 2016\Projects\SuperHeroes\Inheritance of SuperHeroes\obj\Debug\Inheritance of SuperHeroes.exe
+\\qut.edu.au\Documents\StaffHome\StaffGroupR$\roggenka\Desktop\CAB201 2016\Projects\SuperHeroes\Inheritance of SuperHeroes\obj\Debug\Inheritance of SuperHeroes.pdb
+\\qut.edu.au\Documents\StaffHome\StaffGroupR$\roggenka\Desktop\CAB201 2016\Projects\SuperHeroes\Inheritance of SuperHeroes\obj\Debug\Inheritance of SuperHeroes.csprojResolveAssemblyReference.cache
+\\qut.edu.au\Documents\StaffHome\StaffGroupR$\roggenka\Desktop\CAB201 2016\Projects\SuperHeroes\Inheritance of SuperHeroes\bin\Debug\Inheritance of SuperHeroes.exe
+\\qut.edu.au\Documents\StaffHome\StaffGroupR$\roggenka\Desktop\CAB201 2016\Projects\SuperHeroes\Inheritance of SuperHeroes\bin\Debug\Inheritance of SuperHeroes.pdb
+\\qut.edu.au\Documents\StaffHome\StaffGroupR$\roggenka\Desktop\CAB201 2016\Projects\SuperHeroes Implementation\Inheritance of SuperHeroes\bin\Debug\Inheritance of SuperHeroes.exe.config
+\\qut.edu.au\Documents\StaffHome\StaffGroupR$\roggenka\Desktop\CAB201 2016\Projects\SuperHeroes Implementation\Inheritance of SuperHeroes\obj\Debug\Inheritance of SuperHeroes.exe
+\\qut.edu.au\Documents\StaffHome\StaffGroupR$\roggenka\Desktop\CAB201 2016\Projects\SuperHeroes Implementation\Inheritance of SuperHeroes\obj\Debug\Inheritance of SuperHeroes.pdb
+\\qut.edu.au\Documents\StaffHome\StaffGroupR$\roggenka\Desktop\CAB201 Last Time\Projeccts\SuperHeroes Shell\Inheritance of SuperHeroes\bin\Debug\Inheritance of SuperHeroes.exe.config
+\\qut.edu.au\Documents\StaffHome\StaffGroupR$\roggenka\Desktop\CAB201 Last Time\Projeccts\SuperHeroes Shell\Inheritance of SuperHeroes\obj\Debug\Inheritance of SuperHeroes.exe
+\\qut.edu.au\Documents\StaffHome\StaffGroupR$\roggenka\Desktop\CAB201 Last Time\Projeccts\SuperHeroes Shell\Inheritance of SuperHeroes\obj\Debug\Inheritance of SuperHeroes.pdb
+C:\Users\Eli\Documents\UNI2019\CAB201\SuperHeroes\Inheritance of SuperHeroes\bin\Debug\Inheritance of SuperHeroes.exe.config
+C:\Users\Eli\Documents\UNI2019\CAB201\SuperHeroes\Inheritance of SuperHeroes\bin\Debug\Inheritance of SuperHeroes.exe
+C:\Users\Eli\Documents\UNI2019\CAB201\SuperHeroes\Inheritance of SuperHeroes\bin\Debug\Inheritance of SuperHeroes.pdb
+C:\Users\Eli\Documents\UNI2019\CAB201\SuperHeroes\Inheritance of SuperHeroes\obj\Debug\Inheritance of SuperHeroes.csprojAssemblyReference.cache
+C:\Users\Eli\Documents\UNI2019\CAB201\SuperHeroes\Inheritance of SuperHeroes\obj\Debug\Inheritance of SuperHeroes.csproj.CoreCompileInputs.cache
+C:\Users\Eli\Documents\UNI2019\CAB201\SuperHeroes\Inheritance of SuperHeroes\obj\Debug\Inheritance of SuperHeroes.exe
+C:\Users\Eli\Documents\UNI2019\CAB201\SuperHeroes\Inheritance of SuperHeroes\obj\Debug\Inheritance of SuperHeroes.pdb
