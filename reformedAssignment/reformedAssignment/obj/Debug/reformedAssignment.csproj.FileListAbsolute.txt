@@ -1,0 +1,7 @@
+C:\Users\Eli\Documents\UNI2019\CAB201\reformedAssignment\reformedAssignment\bin\Debug\reformedAssignment.exe.config
+C:\Users\Eli\Documents\UNI2019\CAB201\reformedAssignment\reformedAssignment\bin\Debug\reformedAssignment.exe
+C:\Users\Eli\Documents\UNI2019\CAB201\reformedAssignment\reformedAssignment\bin\Debug\reformedAssignment.pdb
+C:\Users\Eli\Documents\UNI2019\CAB201\reformedAssignment\reformedAssignment\obj\Debug\reformedAssignment.csprojAssemblyReference.cache
+C:\Users\Eli\Documents\UNI2019\CAB201\reformedAssignment\reformedAssignment\obj\Debug\reformedAssignment.csproj.CoreCompileInputs.cache
+C:\Users\Eli\Documents\UNI2019\CAB201\reformedAssignment\reformedAssignment\obj\Debug\reformedAssignment.exe
+C:\Users\Eli\Documents\UNI2019\CAB201\reformedAssignment\reformedAssignment\obj\Debug\reformedAssignment.pdb
