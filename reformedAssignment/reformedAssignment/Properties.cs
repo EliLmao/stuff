@@ -40,7 +40,7 @@ namespace Assignment
         {
             this.LocationName = GetLocationName;
             this.Xaxis = GetXaxis;
-            this.Xaxis = GetXaxis;
+            this.Yaxis = GetYaxis;
 
         }
 
